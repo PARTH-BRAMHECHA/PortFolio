@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80" />
+        </figure>
+        <div class="sidebar-actions">
+          <a class="navbar-link sidebar-btn" style="color: black; margin-right: 0.5rem;"
+            href="https://drive.google.com/file/d/1zxanzqOISQWsrx4TQRQV64d_m0wRgiJq/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">
+            Resume
+          </a>
+          <button class="navbar-link sidebar-btn" id="skills-toggle-btn" style="color: black;">Skills</button>
+        </div>
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Parth Bramhecha</h1>
+
+          <p class="title">AI/ML Engineer & Tech Innovator</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div id="sidebar-skills-cloud" class="sidebar-skills-cloud" style="display:none;">
+          <div class="skills-cloud-wrapper">
+            <div class="icon-cloud" id="sidebarIconCloud"></div>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:parth.bramhecha007@gmail.com" class="contact-link">parth.bramhecha007@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:9175342740" class="contact-link">9175342740</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/parth-bramhecha/" class="contact-link">View linkedin profile</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="newspaper-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Medium</p>
+              <a href="https://medium.com/@parth.bramhecha007" class="contact-link">view blogs</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="stats-chart-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Kaggle</p>
+              <a href="https://www.kaggle.com/parthbramhecha" class="contact-link">View kaggle profile</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="logo-github"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">GitHub</p>
+            <a href="https://github.com/PARTH-BRAMHECHA" class="contact-link">View Github profile</a>
+          </div>
+        </li>
+
+    </aside>
+
+    <!--- #main-content-->
+
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I am a passionate technologist specializing in
+            <span class="bold">AI</span>, <span class="bold">Machine Learning</span>,
+            and <span class="bold">full-stack development</span>.
+            With expertise in <span class="bold">Python</span>, <span class="bold">Django</span>,
+            <span class="bold">Flask</span>, <span class="bold">MERN Stack</span>,
+            and data science tools like <span class="bold">Pandas</span>,
+            <span class="bold">Scikit-learn</span>, and <span class="bold">TensorFlow</span>,
+            I create scalable, intelligent solutions that bridge research and real-world applications.
+          </p>
+          
+          <p>
+            My skills span backend systems, cloud deployment, computer vision, and
+            <span class="bold">GenAI</span> integration, with hands-on experience in
+            <span class="bold">MySQL</span>, <span class="bold">FastAPI</span>,
+            and <span class="bold">Remote Sensing</span>.
+            I thrive on solving complex challenges and delivering impactful, user-focused products.
+          </p>
+          <p>
+            Achievements:<br />
+            - 🥈 Runner-up: <span class="bold">BMC Hackathon</span> – Generated and validated reconciliation rules using GenAI & ML on masked data.<br />
+            - 🥈 Runner-up: <span class="bold">BhartiYugam</span> – Recognized for impactful design of the "Prep Genius" solution.<br />
+            - 🚀 Particpated: <span class="bold">Drone Bootcamp (CDAC Pune)</span> – Learned AI-integrated drone applications.
+          </p>
+        </section>
+        <section class="service">
+          <h3 class="h3 service-title">What I'm Doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="assets/images/xai.png" alt="Machine Learning icon" width="40" />
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Explainable AI in Financial Risk Analysis</h4>
+                <p class="service-item-text">
+                  Conducting research on interpretable machine learning models for credit risk prediction, leveraging techniques like SHAP and LIME to enhance model transparency and trustworthiness.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="assets/images/nlp.png" alt="NLP icon" width="40" />
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Low-Resource NLP</h4>
+                <p class="service-item-text">
+                  Developing transformer-based architectures for English↔Bengali translation in low-resource settings, with fine-tuning strategies and comparative model evaluation.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="assets/images/federated.png" alt="Federated Learning icon" width="40" />
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Federated Learning for Healthcare</h4>
+                <p class="service-item-text">
+                  Exploring decentralized model training for medical image classification, ensuring patient data privacy while maintaining high model accuracy across distributed nodes.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="assets/images/network.png" alt="Network analysis icon" width="40" />
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">5G/6G Packet-Level Analyzer</h4>
+                <p class="service-item-text">
+                  Implementing deep packet inspection to classify network traffic, optimize QoS, and detect anomalies such as spoofing, jamming, or unauthorized use.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!--
+          - testimonials modal
+        -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </section>
+        </div>
+      </article>
+
+      <!-- ===========================
+        EXPERIENCE & EDUCATION
+      =========================== -->
+      <article class="experience" data-page="experience">
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+
+        <!-- Education -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://pict.edu/" target="_blank" rel="noopener noreferrer">
+                  Pune Institute of Computer Technology
+                </a>
+              </h4>
+              <span class="time">Nov 2022 – May 2026</span>
+              <p class="timeline-text">
+                B.E. in Information Technology (Honors in AI/ML) <br>
+                GPA: 9.15/10 <br>
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Matoshri Junior College of Science and Commerce, Nashik
+                </a>
+              </h4>
+              <span class="time">2022</span>
+              <p class="timeline-text">
+                HSC <br>
+                Percentage: 81.23% <br>
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Wisdom High International School, Nashik
+                </a>
+              </h4>
+              <span class="time">2006 – 2020</span>
+              <p class="timeline-text">
+                ICSE <br>
+                Percentage: 95.5% <br>
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Experience Cards -->
+        <section class="experience-cards-section">
+          <h3 class="h3">Professional Experience</h3>
+          <div class="experience-cards-row">
+            <div class="experience-card" data-exp="l3cube">
+              <div class="card-header">
+                <img src="assets/images/l3cubelabs.png" alt="L3 Cube Labs" class="card-logo" />
+                <div style="display:flex;flex-direction:column;gap:2px;">
+                  <h4 class="card-title">L3 Cube Labs</h4>
+                  <span class="card-role" style="color:#ffe066;font-size:0.98rem;">Research Intern</span>
+                </div>
+                <span class="eye-icon"><ion-icon name="eye-outline"></ion-icon></span>
+              </div>
+              <div class="card-body" style="color:#fff;font-size:0.97rem;">
+                <span style="font-weight:500;">Low Level NLP</span><br>
+                <span>Worked on low research NLP for indic languages.</span>
+              </div>
+            </div>
+            <div class="experience-card" data-exp="iitkgp">
+              <div class="card-header">
+                <img src="assets/images/iitkh.png" alt="IIT Kharagpur" class="card-logo" />
+                <div style="display:flex;flex-direction:column;gap:2px;">
+                  <h4 class="card-title">IIT Kharagpur</h4>
+                  <span class="card-role" style="color:#ffe066;font-size:0.98rem;">RND Intern</span>
+                </div>
+                <span class="eye-icon"><ion-icon name="eye-outline"></ion-icon></span>
+              </div>
+              <div class="card-body" style="color:#fff;font-size:0.97rem;">
+                <span style="font-weight:500;">May 25 - July 25</span><br>
+                <span>Guided Bash installer for CHAVIDS medical software. Automated cross-platform setup & onboarding.</span>
+              </div>
+            </div>
+            <div class="experience-card" data-exp="campusdekho">
+              <div class="card-header">
+                <img src="assets/images/campusdekho.png" alt="Campus Dekho.AI" class="card-logo" />
+                <div style="display:flex;flex-direction:column;gap:2px;">
+                  <h4 class="card-title">Campus Dekho.AI</h4>
+                  <span class="card-role" style="color:#ffe066;font-size:0.98rem;">Project Intern</span>
+                </div>
+                <span class="eye-icon"><ion-icon name="eye-outline"></ion-icon></span>
+              </div>
+              <div class="card-body" style="color:#fff;font-size:0.97rem;">
+                <span style="font-weight:500;">Nov 2024 – Feb 2025</span><br>
+                <span>Automated data extraction from seat-matrix files and built web scrapers for actionable insights.</span>
+              </div>
+            </div>
+          </div>
+          <div class="experience-cards-row">
+            <div class="experience-card" data-exp="googledev">
+              <div class="card-header">
+                <img src="assets/images/gfd.png" alt="Google for Developers" class="card-logo" />
+                <div style="display:flex;flex-direction:column;gap:2px;">
+                  <h4 class="card-title">Google for Developers</h4>
+                  <span class="card-role" style="color:#ffe066;font-size:0.98rem;">Virtual Intern</span>
+                </div>
+                <span class="eye-icon"><ion-icon name="eye-outline"></ion-icon></span>
+              </div>
+              <div class="card-body" style="color:#fff;font-size:0.97rem;">
+                <span style="font-weight:500;">Jan 2025 – Mar 2025</span><br>
+                <span>Worked with BigTable, Colab & Vision Transformers for ML and demand forecasting projects.</span>
+              </div>
+            </div>
+            <div class="experience-card" data-exp="pict">
+              <div class="card-header">
+                <img src="assets/images/pict.png" alt="PICT Sports Department" class="card-logo" />
+                <div style="display:flex;flex-direction:column;gap:2px;">
+                  <h4 class="card-title">PICT Sports Department</h4>
+                  <span class="card-role" style="color:#ffe066;font-size:0.98rem;">Web Dev Intern</span>
+                </div>
+                <span class="eye-icon"><ion-icon name="eye-outline"></ion-icon></span>
+              </div>
+              <div class="card-body" style="color:#fff;font-size:0.97rem;">
+                <span style="font-weight:500;">Mar 2025 – Apr 2025</span><br>
+                <span>Built and deployed a MERN site for events, achievements, and role-based features.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+          <!-- Experience Modal -->
+          <div id="exp-modal" class="exp-modal">
+            <button class="exp-close" id="exp-close"><ion-icon name="close-outline"></ion-icon></button>
+            <div class="exp-modal-content" id="exp-modal-content"></div>
+          </div>
+                 <!-- Styles -->
+          
+          <div id="imgModal" style="
+            display:none;
+            position:fixed;
+            z-index:9999;
+            left:0;top:0;width:100%;height:100%;
+            background:rgba(0,0,0,0.8);
+            justify-content:center;
+            align-items:center;
+          ">
+            <span style="
+              position:absolute;
+              top:20px;right:30px;
+              font-size:30px;color:white;
+              cursor:pointer;
+            " onclick="closeImageModal()">&times;</span>
+            <img id="imgModalContent" style="max-width:90%;max-height:90%;border-radius:10px;">
+          </div>
+
+       <style>
+          .timeline .time {
+            color: rgb(191, 190, 190);
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.2rem;
+          }
+          .experience-cards-section {
+            margin-top: 2rem;
+          }
+          .experience-cards-row {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            justify-content: flex-start;
+            margin-bottom: 1.5rem;
+          }
+          @media (max-width: 1200px) {
+            .experience-cards-row { flex-wrap: wrap; }
+            .experience-card { max-width: 48%; }
+          }
+          @media (max-width: 900px) {
+            .experience-cards-row { flex-direction: column; }
+            .experience-card { max-width: 100%; }
+          }
+          .experience-card {
+            background: rgb(233, 171, 56);
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(30,200,120,0.13);
+            padding: 1.5rem;
+            flex: 1 1 22%;
+            min-width: 220px;
+            max-width: 24%;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.2s, transform 0.2s;
+            color: #fff;
+            border: 2px solid #343937;
+          }
+          .experience-card:hover {
+            box-shadow: 0 6px 24px #4f565255, 0 4px 16px rgba(0,0,0,0.13);
+            transform: translateY(-4px) scale(1.03);
+          }
+          .experience-card .card-title,
+          .experience-card .card-role,
+          .experience-card .card-time,
+          .experience-card .card-body {
+            color: #fff;
+          }
+          .experience-card .card-logo {
+            background: #fff;
+            border-radius: 0.5rem;
+            padding: 0.3rem;
+            box-shadow: 0 1px 6px #0cb86e33;
+          }
+          .card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.7rem;
+          }
+          .card-logo {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            border-radius: 0.5rem;
+            background: #f5f5f5;
+            padding: 0.3rem;
+          }
+          .card-title {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+          .card-role {
+            display: block;
+            font-size: 0.95rem;
+            color: #888;
+            font-style: italic;
+          }
+          .card-time {
+            display: block;
+            font-size: 0.9rem;
+            color: #bfbebe;
+          }
+          .card-body {
+            font-size: 0.98rem;
+            color: #444;
+          }
+          @media (max-width: 1200px) {
+            .experience-card { max-width: 48%; }
+          }
+          @media (max-width: 900px) {
+            .experience-card { max-width: 100%; }
+            .experience-cards { flex-direction: column; }
+          }
+          .timeline a {
+            text-decoration: none;
+            color: inherit;
+          }
+          @media (max-width: 768px) {
+            .desktop-only {
+              display: none;
+            }
+          }
+        </style>
+
+    </article>
+
+      
+
+      <!--Projects-->
+          
+      <article class="projects" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+          <!-- Filter Buttons -->
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>GenAI Powered</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>ML-Integrated Projects</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+          </ul>
+
+          <!-- Dropdown Select for Mobile -->
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>GenAI Powered</button></li>
+              <li class="select-item"><button data-select-item>ML-Integrated Projects</button></li>
+              <li class="select-item"><button data-select-item>Applications</button></li>
+            </ul>
+          </div>
+
+          <!-- Project Items -->
+          <ul class="project-list">
+            <!-- AI/ML Systems -->
+          <li class="project-item active" data-filter-item data-category="ml-integrated projects" data-project="yield-vision">
+            <div class="project-trigger">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="assets/images/yv.png" alt="Yield Vision" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Yield Vision</h3>
+              <p class="project-category">Agricultural Yield Prediction System</p>
+            </div>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="genai powered" data-project="prep-genius">
+            <div class="project-trigger">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="assets/images/prepgenius.jpg" alt="Prep Genius" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Prep Genius</h3>
+              <p class="project-category">AI Interview Training Platform</p>
+            </div>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="applications" data-project="ocr-parser">
+            <div class="project-trigger">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/ocr-parser.jpg" alt="OCR-ID Card Parser" loading="lazy" />
+              </figure>
+              <h3 class="project-title">OCR-ID Card Parser</h3>
+              <p class="project-category">Document Processing System</p>
+            </div>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="ml-integrated projects" data-project="movie-recommender">
+            <div class="project-trigger">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/movie-recommender.jpg" alt="Movie Recommendation System" loading="lazy" />
+              </figure>
+              <h3 class="project-title">Movie Recommendation System</h3>
+              <p class="project-category">Intelligent Content Discovery</p>
+            </div>
+          </li>
+
+          </ul>
+
+        </section>
+
+        <!-- Project Modal -->
+        <div id="project-modal" class="project-modal">
+          <div class="project-modal-overlay" id="project-modal-overlay"></div>
+          <div class="project-modal-content" id="project-modal-content">
+            <button class="project-modal-close" id="project-modal-close"><ion-icon name="close-outline"></ion-icon></button>
+            <div id="project-modal-body"></div>
+          </div>
+        </div>
+      </article>
+
+      <!--
+        - #PUBLICATIONS
+      -->
+
+    <article class="publications" data-page="publications">
+      <header>
+        <h2 class="h2 article-title">Publications</h2>
+      </header>
+
+      <section class="publications-posts">
+        <ul class="blog-posts-list">
+                    <li class="blog-post-item">
+            <figure class="blog-banner-box">
+              <img src="./assets/images/publication1.jpg" alt="Data Processing and mining for customer segmentation" loading="lazy" />
+            </figure>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="dot"></span>
+                <time datetime="2025-01">Jun 2025</time>
+              </div>
+              <h3 class="h3 blog-item-title">Data Processing and mining for customer segmentation</h3>
+              <p class="blog-text">
+                Explored how data preprocessing, transformation, and mining—combined with the 𝐑𝐅𝐌 (𝐑𝐞𝐜𝐞𝐧𝐜𝐲, 𝐅𝐫𝐞𝐪𝐮𝐞𝐧𝐜𝐲, 𝐌𝐨𝐧𝐞𝐭𝐚𝐫𝐲) 𝐦𝐨𝐝𝐞𝐥—can powerfully enhance customer segmentation strategies.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://www.indjcst.com/archives/paper-details?paperid=185&papertitle=data-processing-and-mining-for-customer-segmentation"
+                  class="project-link dark-yellow"
+                  target="_blank">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+                <a
+                  href="https://github.com/PARTH-BRAMHECHA/credit-card-fraud-detection"
+                  class="project-link dark-yellow"
+                  target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="blog-post-item">
+            <figure class="blog-banner-box">
+              <img src="./assets/images/publication1.jpg" alt="Credit Card Fraud Detection Publication" loading="lazy" />
+            </figure>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="dot"></span>
+                <time datetime="2025-01">Feb 2025</time>
+              </div>
+              <h3 class="h3 blog-item-title">Credit Card Fraud Detection</h3>
+              <p class="blog-text">
+                A comprehensive comparative study on credit card fraud detection using multiple machine learning algorithms,
+                including XGBoost, Logistic Regression, Decision Tree, and Random Forest. The paper includes detailed
+                performance evaluation, analysis, and implementation details.
+              </p>
+              <div class="project-links">
+                <a
+                  href="https://www.pijet.org/papers/volume-2%20issue-1/Final%20Revised%20Paper_Pijet-14_Done.pdf"
+                  class="project-link dark-yellow"
+                  target="_blank">
+                  <i class="fas fa-file-pdf"></i> PDF
+                </a>
+                <a
+                  href="https://github.com/PARTH-BRAMHECHA/credit-card-fraud-detection"
+                  class="project-link dark-yellow"
+                  target="_blank">
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <style>
+      .project-links {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+      }
+
+      .project-link {
+        padding: 8px 14px;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+      }
+
+      .project-link.dark-yellow {
+        background-color: #c6a700; /* dark yellow */
+        color: #fff;
+      }
+
+      .project-link.dark-yellow:hover {
+        background-color: #a38700; /* slightly darker on hover */
+      }
+
+      .project-link i {
+        font-size: 1rem;
+      }
+    </style>
+       
+      <!--
+        - #BLOG
+      -->
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@parth.bramhecha007/intelligent-farming-with-ai-making-smarter-predictions-through-satellite-images-b891a78a837f" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Intelligent Farming with AI: Making Smarter Predictions through Satellite Images" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">AI in Agriculture</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-03">March 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Intelligent Farming with AI: Making Smarter Predictions through Satellite Images
+                  </h3>
+
+                  <p class="blog-text">
+                    Harnessing satellite imagery and AI, we revolutionize farming by making accurate, data-driven predictions for smarter, sustainable agriculture...
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@parth.bramhecha007/why-ai-literacy-matters-and-how-to-get-started-487cc6823335" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Why AI Literacy Matters and How to Get Started" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Education</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-05">May 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Why AI Literacy Matters and How to Get Started
+                  </h3>
+
+                  <p class="blog-text">
+                    AI literacy is the key to thriving in a tech-driven world—empowering you to understand, question, and shape the intelligent systems around you...
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@parth.bramhecha007/machine-unlearning-protecting-privacy-in-ml-models-7053c7b47a9a" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Machine Unlearning: Protecting Privacy in ML Models" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Privacy</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-05">May 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Machine Unlearning: Protecting Privacy in ML Models
+                  </h3>
+
+                  <p class="blog-text">
+                    Machine unlearning empowers AI systems to selectively forget data, ensuring privacy, compliance, and ethical intelligence...
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@parth.bramhecha007/machine-unlearning-protecting-privacy-in-ml-models-7053c7b47a9a" target="_blank">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Machine Unlearning: Protecting Privacy in ML Models" loading="lazy" />
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Quantum Machine Learning</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-05">June 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">
+                    Quantum Machine Learning: The Next Frontier
+                  </h3>
+
+                  <p class="blog-text">
+                    Quantum Machine Learning (QML) is a revolutionary field that combines quantum computing with machine learning...
+                  </p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="https://medium.com/@parth.bramhecha007" class="blog-button" target="_blank">
+          <i class="fab fa-medium"></i> Read All My Blogs
+        </a>
+      </div>
+</article>
+ 
+
+  
+  <!-- Cloud Script -->
+  <script>
+    // Skills Cloud for main experience section (existing)
+    const slugs = [
+      "typescript","react","flutter","mongodb","html5","css3","javascript","nodedotjs","express","flask","fastapi","postgresql","firebase","postman","vercel","amazonwebservices","mysql","docker","git","jira","github","gitlab","numpy","pandas","cplusplus","figma","amazonec2","streamlit"
+    ];
+    // Main cloud (experience section)
+    if (document.getElementById("iconCloud")) {
+      const cloud = document.getElementById("iconCloud");
+      const radius = 160;
+      const icons = [];
+      slugs.forEach((slug, i) => {
+        const icon = document.createElement("div");
+        icon.className = "icon";
+        icon.innerHTML = `<img src="https://cdn.simpleicons.org/${slug}/FFFFFF" alt="${slug}">`;
+        const phi = Math.acos(-1 + (2 * i) / slugs.length);
+        const theta = Math.sqrt(slugs.length * Math.PI) * phi;
+        const x = radius * Math.cos(theta) * Math.sin(phi);
+        const y = radius * Math.sin(theta) * Math.sin(phi);
+        const z = radius * Math.cos(phi);
+        icon.dataset.x = x;
+        icon.dataset.y = y;
+        icon.dataset.z = z;
+        cloud.appendChild(icon);
+        icons.push(icon);
+      });
+      let mouseX = 0, mouseY = 0, rotationX = 0, rotationY = 0;
+      document.addEventListener("mousemove", (e) => {
+        const rect = cloud.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        mouseX = (e.clientX - centerX) / 200;
+        mouseY = (e.clientY - centerY) / 200;
+      });
+      function rotate() {
+        rotationY += mouseX * 0.05;
+        rotationX += mouseY * 0.05;
+        const sinX = Math.sin(rotationX);
+        const cosX = Math.cos(rotationX);
+        const sinY = Math.sin(rotationY);
+        const cosY = Math.cos(rotationY);
+        icons.forEach((icon) => {
+          let x = parseFloat(icon.dataset.x);
+          let y = parseFloat(icon.dataset.y);
+          let z = parseFloat(icon.dataset.z);
+          let x1 = x * cosY - z * sinY;
+          let z1 = z * cosY + x * sinY;
+          let y1 = y * cosX - z1 * sinX;
+          let z2 = z1 * cosX + y * sinX;
+          const scale = 0.6 + (z2 + radius) / (2 * radius);
+          const left = x1 + cloud.offsetWidth / 2 - 20;
+          const top = y1 + cloud.offsetHeight / 2 - 20;
+          icon.style.transform = `translate(${left}px, ${top}px) scale(${scale})`;
+          icon.style.zIndex = Math.floor(scale * 100);
+          icon.style.opacity = scale;
+        });
+        requestAnimationFrame(rotate);
+      }
+      rotate();
+    }
+    // Sidebar skills cloud
+    const skillsBtn = document.getElementById("skills-toggle-btn");
+    const sidebarSkillsCloud = document.getElementById("sidebar-skills-cloud");
+    if (skillsBtn && sidebarSkillsCloud) {
+      let sidebarCloudInitialized = false;
+      skillsBtn.addEventListener("click", function() {
+        if (!sidebarCloudInitialized) {
+          const cloud = document.getElementById("sidebarIconCloud");
+          const radius = 120;
+          const icons = [];
+          slugs.forEach((slug, i) => {
+            const icon = document.createElement("div");
+            icon.className = "icon";
+            icon.innerHTML = `<img src=\"https://cdn.simpleicons.org/${slug}/FFFFFF\" alt=\"${slug}\">`;
+            const phi = Math.acos(-1 + (2 * i) / slugs.length);
+            const theta = Math.sqrt(slugs.length * Math.PI) * phi;
+            const x = radius * Math.cos(theta) * Math.sin(phi);
+            const y = radius * Math.sin(theta) * Math.sin(phi);
+            const z = radius * Math.cos(phi);
+            icon.dataset.x = x;
+            icon.dataset.y = y;
+            icon.dataset.z = z;
+            cloud.appendChild(icon);
+            icons.push(icon);
+          });
+          let mouseX = 0, mouseY = 0, rotationX = 0, rotationY = 0;
+          cloud.addEventListener("mousemove", (e) => {
+            const rect = cloud.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            mouseX = (e.clientX - centerX) / 200;
+            mouseY = (e.clientY - centerY) / 200;
+          });
+          function rotate() {
+            rotationY += mouseX * 0.05;
+            rotationX += mouseY * 0.05;
+            const sinX = Math.sin(rotationX);
+            const cosX = Math.cos(rotationX);
+            const sinY = Math.sin(rotationY);
+            const cosY = Math.cos(rotationY);
+            icons.forEach((icon) => {
+              let x = parseFloat(icon.dataset.x);
+              let y = parseFloat(icon.dataset.y);
+              let z = parseFloat(icon.dataset.z);
+              let x1 = x * cosY - z * sinY;
+              let z1 = z * cosY + x * sinY;
+              let y1 = y * cosX - z1 * sinX;
+              let z2 = z1 * cosX + y * sinX;
+              const scale = 0.6 + (z2 + radius) / (2 * radius);
+              const left = x1 + cloud.offsetWidth / 2 - 20;
+              const top = y1 + cloud.offsetHeight / 2 - 20;
+              icon.style.transform = `translate(${left}px, ${top}px) scale(${scale})`;
+              icon.style.zIndex = Math.floor(scale * 100);
+              icon.style.opacity = scale;
+            });
+            requestAnimationFrame(rotate);
+          }
+          rotate();
+          sidebarCloudInitialized = true;
+        }
+        if (sidebarSkillsCloud.style.display === "none") {
+          sidebarSkillsCloud.style.display = "block";
+        } else {
+          sidebarSkillsCloud.style.display = "none";
+        }
+      });
+    }
+  </script>
+  <style>
+    .sidebar-actions {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .sidebar-btn {
+      background: #ff9100;
+      color: #fff !important;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.4rem 1.1rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      margin-right: 0.5rem;
+      outline: none;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .sidebar-btn:hover, .sidebar-btn:focus {
+      background: #ff7300;
+      color: #fff !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      text-decoration: none;
+    }
+    .sidebar-skills-cloud {
+      margin: 1rem 0 0 0;
+      padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+      border-top: 1px solid #eee;
+      text-align: center;
+      background: #23272f;
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+      min-width: 0;
+    }
+    .sidebar-skills-cloud .skills-cloud-wrapper {
+      width: 260px;
+      height: 220px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .sidebar-skills-cloud .icon-cloud {
+      width: 220px;
+      height: 180px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .sidebar-skills-cloud .icon {
+      position: absolute;
+      transition: transform 0.2s, opacity 0.2s;
+      will-change: transform, opacity;
+      z-index: 2;
+    }
+    .sidebar-skills-cloud .icon img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
+      border-radius: 0.4rem;
+      background: rgba(30,30,30,0.85);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+      padding: 0.25rem;
+      border: 1.5px solid #444;
+      filter: brightness(1.2) contrast(1.1);
+      transition: box-shadow 0.2s, filter 0.2s;
+    }
+    .sidebar-skills-cloud .icon img:hover {
+      box-shadow: 0 4px 16px #ff9100cc, 0 2px 8px rgba(0,0,0,0.18);
+      filter: brightness(1.4) contrast(1.2);
+      border-color: #ff9100;
+    }
+  </style>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
