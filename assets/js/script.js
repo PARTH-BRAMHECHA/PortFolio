@@ -1,71 +1,3 @@
-// Project Modal Logic
-const projectModal = document.getElementById('project-modal');
-const projectModalContent = document.getElementById('project-modal-content');
-const projectModalBody = document.getElementById('project-modal-body');
-const projectModalClose = document.getElementById('project-modal-close');
-const projectModalOverlay = document.getElementById('project-modal-overlay');
-
-const projectDetails = {
-  'yield-vision': {
-    title: 'Yield Vision',
-    img: 'assets/images/yvlogo.png',
-    desc: 'A computer vision system for crop yield prediction using satellite imagery and ML. Integrates remote sensing, deep learning, and data analytics for smarter agriculture.',
-    link: 'https://www.youtube.com/watch?v=_ZcWCp_xLI4',
-    category: 'ML-Integrated Project'
-  },
-  'prep-genius': {
-    title: 'Prep Genius',
-    img: 'assets/images/pglogo.jpg',
-    desc: 'GenAI-powered personalized exam preparation platform. Adaptive quizzes, AI-generated explanations, and performance analytics for students.',
-    link: 'https://github.com/PARTH-BRAMHECHA',
-    category: 'GenAI Powered'
-  },
-  'ocr-parser': {
-    title: 'OCR-ID Card Parser',
-    img: './assets/images/ocr-parser.jpg',
-    desc: 'Application for extracting and parsing ID card data using OCR and ML. Supports multiple formats and languages.',
-    link: 'https://github.com/PARTH-BRAMHECHA/ocr-id-card-parser',
-    category: 'Applications'
-  },
-  'movie-recommender': {
-    title: 'Movie Recommendation System',
-    img: './assets/images/movie-recommender.jpg',
-    desc: 'ML-based movie recommendation engine using collaborative filtering and content-based methods. Built with Python and deployed as a web app.',
-    link: 'https://github.com/PARTH-BRAMHECHA/movie-recommendation-system',
-    category: 'ML-Integrated Project'
-  }
-};
-
-document.querySelectorAll('.project-item .project-trigger').forEach(trigger => {
-  trigger.addEventListener('click', function(e) {
-    const parent = trigger.closest('.project-item');
-    const key = parent.getAttribute('data-project');
-    if (projectDetails[key]) {
-      projectModalBody.innerHTML = `
-        <div style="display:flex;align-items:center;gap:1.5rem;margin-bottom:1.5rem;flex-wrap:wrap;">
-          <img src="${projectDetails[key].img}" alt="${projectDetails[key].title}" style="height:120px;width:120px;border-radius:16px;object-fit:cover;box-shadow:0 2px 12px #0002;">
-          <div>
-            <h2 style="margin:0 0 0.5rem 0;">${projectDetails[key].title}</h2>
-            <span style="font-size:0.98rem;color:#888;">${projectDetails[key].category}</span>
-          </div>
-        </div>
-        <div style="font-size:1.05rem;margin-bottom:1.2rem;">${projectDetails[key].desc}</div>
-        <a href="${projectDetails[key].link}" target="_blank" style="display:inline-block;padding:10px 18px;background:#0cb86e;color:#fff;border-radius:6px;font-weight:600;text-decoration:none;">View Project</a>
-      `;
-      projectModal.classList.add('active');
-    }
-  });
-});
-
-projectModalClose.addEventListener('click', () => {
-  projectModal.classList.remove('active');
-});
-projectModalOverlay.addEventListener('click', () => {
-  projectModal.classList.remove('active');
-});
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') projectModal.classList.remove('active');
-});
 'use strict';
 
 
@@ -81,210 +13,29 @@ const expDetails = {
   l3cube: {
     title: 'L3 Cube Labs',
     logo: './assets/images/l3cube.png',
-    info: `<b>Intern</b> <span style="float:right;">OnGoing</span><br><br>Worked on low level NLP tasks, including text preprocessing, tokenization, and optimization of language models for Indian languages during the internship.`
+    info: `<b>Intern</b> <span style="float:right;">Low Level NLP</span><br><br>Worked on low level NLP tasks, including text preprocessing, tokenization, and optimization of language models for Indian languages during the internship.`
   },
-iitkgp: {
-  title: 'IIT Kharagpur',
-  logo: './assets/images/iitkh.png',
-  info: `
-    <b>RND Intern</b> <span style="float:right;">May 2025 - July 2025</span><br><br>
-    During my internship at IIT Kharagpur, I was responsible for designing and implementing a 
-    <b>cross-platform guided installer</b> for the CHAVIDS medical software, which follows a distributed architecture.<br><br>
-    
-    Key contributions included:
-    <ul>
-      <li>Developed a <b>GUI-based installation wizard</b> using both <b>Tkinter</b> and <b>PyQt5</b> to ensure a consistent experience across Windows and Linux.</li>
-      <li>Created <b>Bash and Batch automation scripts</b> for system-level tasks like Java & MySQL setup, directory configuration, and permission handling.</li>
-      <li>Integrated <b>dependency checks</b> and automated configuration steps to reduce installation errors.</li>
-      <li>Authored a <b>comprehensive installation guide</b> with troubleshooting steps and default configurations for non-technical users.</li>
-      <li>Optimized the installer for <b>distributed environments</b> to ensure seamless component integration.</li>
-    </ul>
-
-    <h3>Certificate</h3>
-    <a href="./assets/docs/iitkgp_certificate.pdf" target="_blank" style="
-      display:inline-block;
-      padding:8px 12px;
-      background:#007bff;
-      color:white;
-      border-radius:5px;
-      text-decoration:none;
-      font-weight:bold;
-      font-size:14px;
-    ">
-      View Certificate (PDF)
-    </a>
-
-    <h3 style="margin-top:15px;">Work Screenshots</h3>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <img src="./assets/images/iitkgp_screenshot1.png" 
-           alt="Work Screenshot 1" 
-           style="width:120px;height:90px;border-radius:6px;object-fit:cover;cursor:pointer;"
-           onclick="openImageModal('./assets/images/iitkgp_screenshot1.png')">
-      <img src="./assets/images/iitkgp_screenshot2.png" 
-           alt="Work Screenshot 2" 
-           style="width:120px;height:90px;border-radius:6px;object-fit:cover;cursor:pointer;"
-           onclick="openImageModal('./assets/images/iitkgp_screenshot2.png')">
-    </div>
-  `
-}
-
-,
+  iitkgp: {
+    title: 'IIT Kharagpur',
+    logo: './assets/images/iitkgp.png',
+    info: `<b>Research Intern</b> <span style="float:right;">Ongoing</span><br><br>Designed & implemented a guided Bash installer for CHAVIDS medical software (distributed architecture).<br>Automated cross-platform setup & dependency management to improve onboarding speed.`
+  },
   campusdekho: {
-  title: 'Campus Dekho.AI',
-  logo: './assets/images/campusdekho.png',
-  info: `
-    <b>Project Intern</b> <span style="float:right;">Nov 2024 - Feb 2025</span><br><br>
-    During my internship at Campus Dekho.AI, I contributed to the project <b>"Structured Data Extraction from Educational Websites"</b>, 
-    focusing on automating the extraction and processing of seat-matrix and admission data.<br><br>
-    
-    Key contributions included:
-    <ul>
-      <li>Designed and deployed Python-based solutions to <b>auto-extract data</b> from MHT-CET and AI seat-matrix files.</li>
-      <li>Utilized <b>web scraping</b> to retrieve structured seat allocation data from educational portals like Career360 and JOSAA.</li>
-      <li>Performed <b>data cleansing and analysis</b> to transform raw, unstructured datasets into actionable insights.</li>
-      <li>Carried out <b>case studies</b> on real-world admission datasets to identify trends and patterns for decision-making.</li>
-    </ul>
-
-    <h3>Certificate</h3>
-    <a href="./assets/docs/gdb_certificate.pdf" target="_blank" style="
-      display:inline-block;
-      padding:8px 12px;
-      background:#007bff;
-      color:white;
-      border-radius:5px;
-      text-decoration:none;
-      font-weight:bold;
-      font-size:14px;
-    ">
-      View Certificate (PDF)
-    </a>
-
-    <h3 style="margin-top:15px;">Work Screenshots</h3>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <img src="./assets/images/campusdekho_screenshot1.png" 
-           alt="Work Screenshot 1" 
-           style="width:120px;height:90px;border-radius:6px;object-fit:cover;cursor:pointer;"
-           onclick="openImageModal('./assets/images/campusdekho_screenshot1.png')">
-      <img src="./assets/images/campusdekho_screenshot2.png" 
-           alt="Work Screenshot 2" 
-           style="width:120px;height:90px;border-radius:6px;object-fit:cover;cursor:pointer;"
-           onclick="openImageModal('./assets/images/campusdekho_screenshot2.png')">
-    </div>
-  `
-}
-,
-googledev: {
-  title: 'Google for Developers',
-  logo: './assets/images/gfd.png',
-  info: `
-    <b>Virtual Intern</b> <span style="float:right;">Jan 2025 - Mar 2025</span><br><br>
-    During my virtual internship with Google for Developers, I gained hands-on experience with Google's cloud-based tools 
-    and applied them to machine learning and big data projects.<br><br>
-    
-    Key contributions and learnings included:
-    <ul>
-      <li>Worked with <b>Google BigTable</b> for managing and querying large-scale datasets efficiently.</li>
-      <li>Utilized <b>Google Colab</b> for collaborative machine learning experiments and prototyping.</li>
-      <li>Explored <b>Vision Transformer</b> models for advanced image processing tasks.</li>
-      <li>Developed a <b>market analysis project</b> leveraging big data components as its foundation.</li>
-    </ul>
-
-    <h3>Certificate</h3>
-    <a href="./assets/docs/googledev_certificate.pdf" target="_blank" style="
-      display:inline-block;
-      padding:8px 12px;
-      background:#007bff;
-      color:white;
-      border-radius:5px;
-      text-decoration:none;
-      font-weight:bold;
-      font-size:14px;
-    ">
-      View Certificate (PDF)
-    </a>
-
-    <h3 style="margin-top:15px;">GitHub Repository</h3>
-    <a href="https://github.com/PARTH-BRAMHECHA/Inventory-Demand-Forecasting" target="_blank" style="
-      display:inline-block;
-      padding:8px 12px;
-      background:#28a745;
-      color:white;
-      border-radius:5px;
-      text-decoration:none;
-      font-weight:bold;
-      font-size:14px;
-    ">
-      View on GitHub
-    </a>
-  `
-}
-,
-pict: {
-  title: 'PICT Sports Department',
-  logo: './assets/images/pict.png',
-  info: `
-    <b>Web Development Intern</b> <span style="float:right;">Mar 2025 – Apr 2025</span><br><br>
-    As a Web Development Intern for the PICT Sports Department, I designed, developed, and deployed a 
-    <b>full-stack MERN application</b> to digitally showcase departmental activities and streamline event updates.<br><br>
-
-    Key contributions included:
-    <ul>
-      <li>Developed a <b>responsive and performance-optimized frontend</b> using React.js and Tailwind CSS.</li>
-      <li>Implemented <b>backend APIs in Node.js & Express.js</b> to manage dynamic content and event data.</li>
-      <li>Integrated <b>MongoDB</b> for storing achievements, event details, and user role permissions.</li>
-      <li>Designed <b>role-based authentication & authorization</b> for admins, editors, and general visitors.</li>
-      <li>Deployed the application to ensure <b>seamless access across devices</b> and enhanced the department’s online presence.</li>
-    </ul>
-
-    <h3>Links</h3>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;">
-      <a href="https://github.com/yourusername/pict-sports" target="_blank" style="
-        display:inline-block;
-        padding:8px 12px;
-        background:#28a745;
-        color:white;
-        border-radius:5px;
-        text-decoration:none;
-        font-weight:bold;
-        font-size:14px;
-      ">View on GitHub</a>
-
-      <a href="https://sports-website-1.onrender.com/" target="_blank" style="
-        display:inline-block;
-        padding:8px 12px;
-        background:#007bff;
-        color:white;
-        border-radius:5px;
-        text-decoration:none;
-        font-weight:bold;
-        font-size:14px;
-      ">View Live Website</a>
-    </div>
-
-    <h3 style="margin-top:15px;">Work Screenshots</h3>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <img src="./assets/images/pict_screenshot1.png" 
-           alt="Work Screenshot 1" 
-           style="width:120px;height:90px;border-radius:6px;object-fit:cover;cursor:pointer;"
-           onclick="openImageModal('./assets/images/pict_screenshot1.png')">
-      <img src="./assets/images/pict_screenshot2.png" 
-           alt="Work Screenshot 2" 
-           style="width:120px;height:90px;border-radius:6px;object-fit:cover;cursor:pointer;"
-           onclick="openImageModal('./assets/images/pict_screenshot2.png')">
-    </div>
-  `
-}
-
+    title: 'Campus Dekho.AI',
+    logo: './assets/images/campusdekho.png',
+    info: `<b>Project Intern</b> <span style="float:right;">Nov 2024 – Feb 2025</span><br><br>Automated data extraction from MHT-CET & AI seat-matrix files using Python.<br>Built web scrapers for Career360 & JOSAA, transforming raw data into actionable insights.`
+  },
+  googledev: {
+    title: 'Google for Developers',
+    logo: './assets/images/googledev.png',
+    info: `<b>Virtual Intern</b> <span style="float:right;">Jan 2025 – Mar 2025</span><br><br>Worked with BigTable, Google Colab & Vision Transformers for ML & image processing.<br>Developed an inventory demand forecasting project leveraging big data components.`
+  },
+  pict: {
+    title: 'PICT Sports Department',
+    logo: './assets/images/pict.png',
+    info: `<b>Web Development Intern</b> <span style="float:right;">Mar 2025 – Apr 2025</span><br><br>Built & deployed a full-stack MERN site to showcase events, achievements, & role-based features.<br>Enhanced digital presence with responsive, performance-optimized design.`
+  }
 };
-function openImageModal(src) {
-  document.getElementById('imgModal').style.display = 'flex';
-  document.getElementById('imgModalContent').src = src;
-}
-
-function closeImageModal() {
-  document.getElementById('imgModal').style.display = 'none';
-}
-
 
 document.querySelectorAll('.experience-card').forEach(card => {
   card.addEventListener('click', function() {
@@ -458,23 +209,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
       }
     }
 
-  });
-}
-
-const skillsBtn = document.getElementById("skills-toggle-btn");
-const mainSkillsCloud = document.getElementById("main-skills-cloud");
-const aboutText = document.getElementById("about-text");
-
-if (skillsBtn && mainSkillsCloud && aboutText) {
-  skillsBtn.addEventListener("click", function() {
-    if (mainSkillsCloud.style.display === "none") {
-      mainSkillsCloud.style.display = "block";
-      aboutText.style.opacity = "0.2";
-      aboutText.style.transition = "opacity 0.5s";
-    } else {
-      mainSkillsCloud.style.display = "none";
-      aboutText.style.opacity = "1";
-    }
   });
 }
 
