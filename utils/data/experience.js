@@ -10,7 +10,7 @@ export const experiences = [
     id: 1,
     title: 'Research Intern',
     company: "L3Cube Labs",
-    duration: "(July 2025 - June 2026)",
+    duration: "(July 2025 - May 2026)",
     work: "Built a large-scale Indic misinformation dataset from fact-checking platforms and designed curriculum learning with adversarial data augmentation, enabling the CLFD model to achieve 97.82% accuracy and 0.9777 Macro F1. Developed an Indic fake news detection framework with a Retrieval-Augmented Generation (RAG) pipeline for evidence-grounded verification and a Contrastive Learning for Fake News Detection (CLFD) architecture with dual encoders and cross-attention.",
     certificates: [
       {

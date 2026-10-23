@@ -1,24 +1,24 @@
 export const publications = [
   {
     id: "pub-10",
-    title: "IndicShield: A Multilingual Safety Guardrail Model for Indic Language LLM Alignment",
+    title: "IndicGuard: A Multilingual Safety Guardrail Model for Indic Language LLM Alignment",
     image: "/publications/fine_tune.png",
     shortDescription:
-      "Introduces IndicShield, a multilingual safety dataset and guardrail model for Indic languages, enabling culturally-aware LLM alignment through adversarial data generation, code-mixed augmentation, and multilingual fine-tuning.",
+      "Introduces IndicGuard, a multilingual safety dataset and guardrail model for Indic languages, enabling culturally-aware LLM alignment through adversarial data generation, code-mixed augmentation, and multilingual fine-tuning.",
     longDescription: `
-IndicShield presents a comprehensive framework for building culturally-aware safety guardrails for Large Language Models across Indic languages.
+IndicGuard presents a comprehensive framework for building culturally-aware safety guardrails for Large Language Models across Indic languages.
 
 The work addresses the lack of multilingual safety resources by introducing a high-quality benchmark dataset and guard models that capture region-specific cultural norms, code-mixed communication, and adversarial prompting.
 
 Key Contributions:
-• Creation of the IndicShield multilingual safety dataset
+• Creation of the IndicGuard multilingual safety dataset
 • Translation and reconstruction pipeline for multiple Indic languages
 • Culture-aware augmentation using LLMs
 • Human-in-the-loop validation for high-quality annotations
 • Support for adversarial prompts, jailbreak attacks, and code-mixed inputs
 • Fine-tuning multilingual safety guard models for content moderation
 
-The proposed models are evaluated on standard safety benchmarks along with culturally grounded Indic datasets, demonstrating improved robustness and multilingual safety alignment. IndicShield provides an open foundation for developing safer and more inclusive LLMs for Indian languages and multilingual applications.
+The proposed models are evaluated on standard safety benchmarks along with culturally grounded Indic datasets, demonstrating improved robustness and multilingual safety alignment. IndicGuard provides an open foundation for developing safer and more inclusive LLMs for Indian languages and multilingual applications.
 `,
     date: "Arxiv Preprint,2026",
     pdfLink: "",
@@ -96,11 +96,11 @@ Key contributions include:
 
 The dataset provides strong baselines using BERT models and establishes an open benchmark for multilingual and culturally-aware misinformation research in the Indian context.
 `,
-    date: "ACL 2026 (Under Review)",
+    date: "Arxiv Preprint,2026",
     pdfLink: "/publication_pdf/Fake_news_dataset.pdf",
-    paperLink: "",
+    paperLink: "https://arxiv.org/abs/2609.02895",
     codeLink: "",
-    datasetLink: "https://drive.google.com/drive/folders/1jTLlAuAiXceDVdLRoAhe4ANQTfcOX4kQ",
+    datasetLink: "https://huggingface.co/datasets/l3cube-pune/BharatGather",
   },
   {
     id: "pub-9",
@@ -131,11 +131,11 @@ Key Contributions:
 
 Together, the proposed approaches provide accurate, interpretable, and robust fake news detection for culturally diverse and low-resource environments.
 `,
-    date: "ACL 2026 (Under Review)",
+    date: "Accepted: PACLIC, 2026",
     pdfLink: "/publication_pdf/Fake_news_model.pdf",
     paperLink: "",
     codeLink: "",
-    datasetLink: "https://drive.google.com/drive/folders/1jTLlAuAiXceDVdLRoAhe4ANQTfcOX4kQ",
+    datasetLink: "https://huggingface.co/datasets/l3cube-pune/BharatGather",
   },
   {
     id: "pub-3",
