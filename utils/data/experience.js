@@ -4,14 +4,14 @@ export const experiences = [
     title: "Machine Learning Intern",
     company: "Froncort.Ai",
     duration: "(Aug 2026 - Ongoing)",
-    work: "Working on machine learning development and implementation, including model training, testing, integration, evaluation and improvement. Supporting ML pipelines, inference workflows, deployment and monitoring while researching suitable techniques, documenting experiments and building practical MLOps experience. Currently working with the active case findinding team to overcome cold start problem in new regions",
+    work: "Working with the AI Netra Active Case Finding team on tuberculosis (TB) risk prediction in India. Developing and evaluating models that rank geographic areas by TB risk, combining historical case notifications with building-footprint, population-dynamics and environmental raster data to classify areas as High, Medium or Low risk. Built a cold-start pipeline for new regions with no prior TB screening data. Also supporting ML pipelines, inference workflows, deployment and monitoring, and documenting experiments.",
   },
   {
     id: 1,
     title: 'Research Intern',
     company: "L3Cube Labs",
     duration: "(July 2025 - May 2026)",
-    work: "Built a large-scale Indic misinformation dataset from fact-checking platforms and designed curriculum learning with adversarial data augmentation, enabling the CLFD model to achieve 97.82% accuracy and 0.9777 Macro F1. Developed an Indic fake news detection framework with a Retrieval-Augmented Generation (RAG) pipeline for evidence-grounded verification and a Contrastive Learning for Fake News Detection (CLFD) architecture with dual encoders and cross-attention.",
+    work: "NLP research on multilingual AI safety and Indic misinformation detection. IndicGuard: fine-tuned Gemma-3-4B-IT with LoRA on curated multilingual safety data (culturally adaptive, code-mixed and jailbreak examples) to build a safety guardrail for ten Indic languages and English, reaching 0.8317 User Safety F1 and 0.8189 Response Safety F1. BharatGather: led construction of a 14,646-record benchmark of public-event misinformation from Indian fact-checking platforms and YouTube. Designed CLFD, a contrastive dual-encoder model with cross-attention, curriculum learning and adversarial data augmentation (97.82% accuracy, 0.9777 Macro F1), alongside a FAISS-based Retrieval-Augmented Generation (RAG) pipeline with LLM verification (90.91% accuracy). Served as Person in Charge (Communication) for the research team, coordinating updates and progress reporting.",
     certificates: [
       {
         name: "Sponsorship Certificate",
