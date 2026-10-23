@@ -35,7 +35,7 @@ export const experiences = [
   {
     id: 3,
     title: "Project Intern",
-    company: "Campus Dekho.AI",
+    company: "GDB Solutions",
     duration: "(Nov 24 - Feb 25)",
     work: "Developed an AI-powered web application that provides personalized college recommendations based on user preferences and academic profiles. Implemented machine learning algorithms to analyze college data and match it with user inputs, enhancing the decision-making process for prospective students.",
     certificates: [
