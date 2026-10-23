@@ -75,18 +75,4 @@ export const projects = [
     github: "https://github.com/PARTH-BRAMHECHA/ocr-id-card-parser",
     demoVideo: "",
   },
-  {
-    id: "project-devnagri-llm",
-    category: "applied",
-    title: "Devnagri_LLM",
-    image: "/project/devnagri-llm.png",
-    shortDescription:
-      "A multi-stage research pipeline for Devanagari-script LLM compression, using vocabulary extension and LoRA fine-tuning on Airavata to study compression-quality trade-offs for Indic language models.",
-    longDescription:
-      "Devnagri_LLM is an ongoing research project investigating how far Devanagari-script large language models can be compressed without losing fidelity. The pipeline vocabulary-extends and QLoRA fine-tunes Airavata-7B, then benchmarks compression against carefully isolated baselines (bits-per-character with variance reporting, ablations across fine-tuning stages, and LLM-generated-text conditions). Work has focused heavily on making the pipeline correct and reproducible on constrained hardware: fixing CUDA out-of-memory failures in the fine-tuning stage, resolving a baseline-isolation bug where the LoRA adapter was merging before the unfine-tuned baseline was recorded, and closing gaps in ablation coverage. The project targets a submission to an ACL/TALLIP-caliber NLP venue and runs on Kaggle T4 GPUs, using Hugging Face Transformers, PEFT, and torchao.",
-    tools: ["Python", "PyTorch", "Hugging Face Transformers", "PEFT / LoRA", "torchao", "Kaggle T4"],
-    Sponsor: "",
-    github: "https://github.com/PARTH-BRAMHECHA/Devnagri_LLM",
-    demoVideo: "",
-  },
 ];
