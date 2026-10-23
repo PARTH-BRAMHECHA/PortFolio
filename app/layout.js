@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500"
 export const metadata = {
   title: "Portfolio of Parth Bramhecha - Student | Developer | Researcher",
   description:
-    "This is the portfolio of Parth Brmhecha. I am a IT student with love for machine learning. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    "This is the portfolio of Parth Bramhecha. I am an IT student with love for machine learning. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
 };
 
 export default function RootLayout({ children }) {
